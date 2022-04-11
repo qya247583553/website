@@ -86,6 +86,9 @@ $result=mysqli_query($conn,$sql) ;
                         <a href="view%20students.php" class="waves-effect"><i class="dripicons-user"></i><span> view all students </span></a>
                     </li>
                     <li>
+                        <a href="view%20allocatesystem%20result.php" class="waves-effect"><i class="dripicons-user"></i><span> view allocatesystem result </span></a>
+                    </li>
+                    <li>
                         <a href="../Loginpage/web/index.html" class="waves-effect"><i class="dripicons-exit"></i><span> Exit Sytem</span></a>
                     </li>
 
@@ -177,7 +180,7 @@ $result=mysqli_query($conn,$sql) ;
                                                 <td><?php echo $row["StudentID"]?></td>
                                                 <td><?php echo $row["StudentEmail"]?></td>
                                                 <td><?php echo $row["StudentPassword"]?></td>
-                                                <td><?php echo $row["Fist_Name"]?></td>
+                                                <td><?php echo $row["First_Name"]?></td>
                                                 <td><?php echo $row["Last_Name"]?></td>
                                                 <form action="Modify%20students.php" method="post">
                                                     <td><button  class="btn btn-info" value="<?php echo $row["StudentID"]?>" name="Update" >Update</button></td>

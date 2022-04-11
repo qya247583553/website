@@ -86,6 +86,9 @@ $result=mysqli_query($conn,$sql) ;
                         <a href="view%20students.php" class="waves-effect"><i class="dripicons-user"></i><span> view all students </span></a>
                     </li>
                     <li>
+                        <a href="view%20allocatesystem%20result.php" class="waves-effect"><i class="dripicons-user"></i><span> view allocatesystem result </span></a>
+                    </li>
+                    <li>
                         <a href="../Loginpage/web/index.html" class="waves-effect"><i class="dripicons-exit"></i><span> Exit Sytem</span></a>
                     </li>
 
@@ -166,7 +169,7 @@ $result=mysqli_query($conn,$sql) ;
                                             <tr class="tbContext">
                                                 <td><?php echo $row["SupID"]?></td>
                                                 <td><?php echo $row["SupervisorEmail"]?></td>
-                                                <td><?php echo $row["SupervsiorPassword"]?></td>
+                                                <td><?php echo $row["SupervisorPassword"]?></td>
                                                 <td><?php echo $row["First_Name"]?></td>
                                                 <td><?php echo $row["Last_Name"]?></td>
                                                 <form action="Modify%20Supervisors.php" method="post">

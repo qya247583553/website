@@ -17,7 +17,7 @@ if(isset($_POST['allocate'])) {
    print_r($_POST["Studentdetails"]);
 
     $conn->query($sql);
-
+    header("Location:sup.php");
 
 
 }
