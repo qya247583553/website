@@ -10,7 +10,7 @@ if (isset($_POST['login'])) {
     }
     $conn->select_db("allocate system");
     // Verification check, checking if inputted details match pre-registered supervisors details
-    $sql = "SELECT * FROM `allocate system`.supervisoraccount WHERE SupervisorEmail='".$Email."' AND SupervsiorPassword='".$Password."';";
+    $sql = "SELECT * FROM `allocate system`.supervisoraccount WHERE SupervisorEmail='".$Email."' AND SupervisorPassword='".$Password."';";
     echo $sql;
     $reports = $conn->query($sql);
     if ($reports->num_rows == 1) {
